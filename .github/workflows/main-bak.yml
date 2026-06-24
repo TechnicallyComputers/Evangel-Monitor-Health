@@ -25,7 +25,7 @@ jobs:
 
       - name: Build macOS App
         run: |
-          pyinstaller --onefile --windowed --icon=dist/icons.icns evangel_monitor_health.py
+          pyinstaller --onefile --windowed --icon=icon.icns evangel_monitor_health.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
