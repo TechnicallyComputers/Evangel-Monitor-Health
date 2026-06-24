@@ -28,11 +28,8 @@ jobs:
           pyinstaller --onefile --icon=icons.icns evangel_monitor_health.py
 
       - name: Upload artifact
-        run: |
-          echo "##[set-output name=artifact_path;value=${{ github.workspace }}/dist/Evangel-Monitor-Health.app }}"
-        
-        - name: Archive and upload artifact
-          uses: actions/upload-artifact@v2
-          with:
-            name: Evangel-Monitor-Health.app
-            path: dist/Evangel-Monitor-Health.app
+        id: upload-artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Evangel-Monitor-Health.app
+          path: dist/Evangel-Monitor-Health.app
