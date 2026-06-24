@@ -30,5 +30,4 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-file@v2
         with:
-          name: Evangel-Monitor-Health.app
-          path: dist/Evangel-Monitor-Health.app
+          file: dist/Evangel-Monitor-Health.app
