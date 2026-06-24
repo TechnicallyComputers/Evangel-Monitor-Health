@@ -28,7 +28,6 @@ jobs:
           pyinstaller --onefile --icon=icons.icns evangel_monitor_health.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-file@v2
         with:
-          name: Evangel-Monitor-Health.app
-          path: dist/Evangel-Monitor-Health.app
+          file: dist/Evangel-Monitor-Health.app
