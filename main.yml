@@ -1,0 +1,34 @@
+name: Build macOS App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-macos-app:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install pyinstaller pillow tkinter
+
+      - name: Build macOS App
+        run: |
+          pyinstaller --onefile --icon=icons.icns evangel_monitor_health.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Evangel-Monitor-Health.app
+          path: dist/Evangel-Monitor-Health.app
