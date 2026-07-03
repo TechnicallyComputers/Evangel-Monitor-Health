@@ -91,23 +91,23 @@ class MonitorHealthCheckApp:
             return e.output
 
     def check_projectors(self):
-        with open("monitorOFF", "r") as file:
-            output = file.read()
-        #output = self.run_command("ioreg -p IOUSB -lw0")
+        #with open("monitorOFF", "r") as file:
+            #output = file.read()
+        output = self.run_command("ioreg -p IOUSB -lw0")
         projectors = re.findall(r"USB-C VGA Multiport Adapter", output)
         return len(projectors) > 0
 
     def check_monitors(self):
-        with open("monitorOFF", "r") as file:
-            output = file.read()
-        #output = self.run_command("system_profiler SPDisplaysDataType")
+        #with open("monitorOFF", "r") as file:
+            #output = file.read()
+        output = self.run_command("system_profiler SPDisplaysDataType")
         monitors = re.findall(r"Super Video Graphics Array", output)
         return len(monitors) > 0
 
     def check_thunderbolt_enclosure(self):
-        with open("tb-bm-TRUE", "r") as file:
-            output = file.read()
-        #output = self.run_command("system_profiler SPDisplaysDataType")
+        #with open("tb-bm-TRUE", "r") as file:
+            #output = file.read()
+        output = self.run_command("system_profiler SPThunderboltDataType")
         return "Device Name: TB31PCIEX16" in output
     
     def check_projectors_and_monitors(self):
