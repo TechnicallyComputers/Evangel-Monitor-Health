@@ -25,10 +25,15 @@ jobs:
 
       - name: Build macOS App
         run: |
-          pyinstaller --onefile --windowed --icon=icon.icns evangel_monitor_health.py
+          pyinstaller --windowed --icon=icon.icns --name "Evangel Monitor Health" evangel_monitor_health.py
+
+      - name: Zip macOS app bundle
+        run: |
+          cd dist
+          ditto -c -k --keepParent "Evangel Monitor Health.app" "Evangel-Monitor-Health.zip"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: Evangel-Monitor-Health-app
-          path: dist/evangel_monitor_health
+          path: dist/Evangel-Monitor-Health.zip

@@ -1,0 +1,56 @@
+Graphics/Displays:
+
+    Apple M4:
+
+      Chipset Model: Apple M4
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 10
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        C32R50x:
+          Resolution: 1920 x 1080 (1080p FHD - Full High Definition)
+          UI Looks like: 1920 x 1080 @ 75.00Hz
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Rotation: Supported
+
+
+ +-o USB-C VGA Multiport Adapter@00120000  <class IOUSBHostDevice, id 0x1000014fc, registered, matched, active, busy 0 (4 ms), retain 15>
+          {
+            "kUSBSerialNumberString" = "DLC717202MGG2WFAC"
+            "bDeviceClass" = 17
+            "bDeviceSubClass" = 0
+            "iSerialNumber" = 1
+            "IOServiceDEXTEntitlements" = (("com.apple.developer.driverkit.transport.usb"))
+            "iProduct" = 4
+            "USB Serial Number" = "DLC717202MGG2WFAC"
+            "USB Vendor Name" = "Apple Inc."
+            "USBSpeed" = 2
+            "IOPowerManagement" = {"PowerOverrideOn"=Yes,"DevicePowerState"=2,"CurrentPowerState"=2,"CapabilityFlags"=32768,"MaxPowerState"=2,"DriverPowerState"=0}
+            "bNumConfigurations" = 1
+            "kUSBProductString" = "USB-C VGA Multiport Adapter"
+            "kUSBVendorString" = "Apple Inc."
+            "USB Product Name" = "USB-C VGA Multiport Adapter"
+            "iManufacturer" = 2
+            "idVendor" = 1452
+            "Device Speed" = 0
+            "UsbIdlePolicy" = 1000
+            "idProduct" = 5217
+            "bcdDevice" = 565
+            "UsbDeviceSignature" = <ac0561143502444c433731373230324d47473257464143110000>
+            "kUSBContainerID" = "2e500112-290d-c6ae-d100-6556431900f5"
+            "sessionID" = 8945970919
+            "USB Address" = 3
+            "IOCFPlugInTypes" = {"9dc7b780-9ec0-11d4-a54f-000a27052861"="IOUSBHostFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}
+            "UsbUserClientEntitlementRequired" = {"UsbUserClientEntitlement"="com.apple.developer.usb.billboard","UsbUserClientEntitlementExceptionAllowUnlocked"=Yes}
+            "kUSBCurrentConfiguration" = 1
+            "USBPortType" = 1
+            "bDeviceProtocol" = 0
+            "locationID" = 1179648
+            "kUSBAddress" = 3
+            "bcdUSB" = 528
+            "bMaxPacketSize0" = 8
+          }

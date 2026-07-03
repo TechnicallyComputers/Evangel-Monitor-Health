@@ -1,0 +1,47 @@
+Thunderbolt/USB4:
+
+    Thunderbolt/USB4 Bus 3:
+
+      Vendor Name: Apple Inc.
+      Device Name: Mac mini
+      UID: 0x05AC06F399F25633
+      Route String: 0
+      Domain UUID: D284DC90-B459-4DEB-80D6-8DF60EB5E4CE
+      Port:
+          Status: Device connected
+          Link Status: 0x2
+          Speed: 40 Gb/s
+          Receptacle: 4
+          Micro Firmware Version: 0.0.0
+
+        TB31PCIEX16:
+
+          Vendor Name: StarTech.com
+          Device Name: TB31PCIEX16
+          Mode: Thunderbolt 3
+          Device ID: 0x9
+          Vendor ID: 0x006F
+          Device Revision: 0x1
+          UID: 0x006FF3952DA0A800
+          Route String: 1
+          Firmware Version: 47.1
+          Port (Upstream):
+              Status: Device connected
+              Link Status: 0x2
+              Speed: 40 Gb/s
+              Link Controller Firmware Version: 0.40.0
+          Port:
+              Status: No device connected
+              Link Status: 0x7
+              Speed: Up to 40 Gb/s
+              Link Controller Firmware Version: 0.40.0
+
+
+3 extension(s)
+--- com.apple.system_extension.cmio (Go to 'System Settings > General > Login Items & Extensions > Camera Extensions' to modify these system extension(s))
+enabled	active	teamID	bundleID (version)	name	[state]
+	*	9ZGFBWLSYP	com.blackmagic-design.desktopvideo.BlackmagicCameraExtension (15.3.1/1503.0140.4)	com.blackmagic-design.desktopvideo.BlackmagicCameraExtension	[activated disabled]
+--- com.apple.system_extension.driver_extension (Go to 'System Settings > General > Login Items & Extensions > Driver Extensions' to modify these system extension(s))
+enabled	active	teamID	bundleID (version)	name	[state]
+*	*	9ZGFBWLSYP	com.blackmagic-design.BlackmagicIO.DExt (15.3.1/1503.0140.4)	com.blackmagic-design.BlackmagicIO.DExt	[activated enabled]
+*	*	9ZGFBWLSYP	com.blackmagic-design.desktopvideo.Network.DExt (15.3.1/1503.0141.4)	com.blackmagic-design.desktopvideo.Network.DExt	[activated enabled]
