@@ -9,10 +9,12 @@ When I came in the other day, I ran these commands in different scenarios, and s
 The program runs these commands to check if stuff is plugged in and working, and then presents pop up messages for the user based on that:
 
 To see if the USB adapter and the thunderbolt enclosure are plugged in:
+`system_profiler SPThunderboltDataType`
+
+To see if the USB C to VGA Adapter is plugged in: 
 `ioreg -p IOUSB -lw0`
-To see if the VGA monitor is detected as a display, if it doesn't appear here, it still needs to be configured in that drop down widget in the top right for "Screen Mirroring":
+
+To see if VGA monitor is detected as a display, if it doesn't appear here, it still needs to be configured in that drop down widget in the top right for "Screen Mirroring":
 `system_profiler SPDisplaysDataType`
-To see if the BlackMagic drivers are installed and enabled:
-`systemextensionsctl list`
 
 Then it presents error messages with troubleshooting instructions and/or pictures to help configure the displays accordingly after verifying physical connectivity.
