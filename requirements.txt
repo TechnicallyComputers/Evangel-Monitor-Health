@@ -1,0 +1,3 @@
+imgui-bundle
+numpy
+pillow
