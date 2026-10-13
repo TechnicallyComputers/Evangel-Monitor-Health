@@ -17,15 +17,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
-          pip install pyinstaller pillow
+          pip install pyinstaller -r requirements.txt
 
       - name: Build macOS App
         run: |
-          pyinstaller --windowed --icon=icon.icns --name "Evangel Monitor Health" evangel_monitor_health.py
+          pyinstaller --windowed --icon=icon.icns --name "Evangel Monitor Health" --collect-all imgui_bundle evangel_monitor_health.py
 
       - name: Stage macOS app bundle
         run: |

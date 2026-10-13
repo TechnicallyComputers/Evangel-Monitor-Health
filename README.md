@@ -18,3 +18,9 @@ To see if VGA monitor is detected as a display, if it doesn't appear here, it st
 `system_profiler SPDisplaysDataType`
 
 Then it presents error messages with troubleshooting instructions and/or pictures to help configure the displays accordingly after verifying physical connectivity.
+
+## Version 2.0 — Dear ImGui
+
+The UI was rewritten with Dear ImGui (`imgui-bundle`) because Tk's button clicks were unreliable on macOS. The checks and detection strings are unchanged. To run from source: `pip install -r requirements.txt && python evangel_monitor_health.py`.
+
+For testing on a machine without the macOS tools, point the app at saved command output, e.g. `python evangel_monitor_health.py --ioreg-file monitorON --displays-file monitorOFF --thunderbolt-file tb-bm-TRUE`.
